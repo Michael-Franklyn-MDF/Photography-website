@@ -57,6 +57,7 @@ nav ul li {
 
 }
 
+
 .page-flex main {
   flex: 1;
   padding: 2rem 1rem;
@@ -66,6 +67,9 @@ nav ul li {
   background: #fff;
   padding: 1.5rem;
   margin-bottom: 2rem;
+  margin: auto;
+  width: 80%;
+  margin-left: 250px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(34,34,59,0.05);
   align-self: auto;
