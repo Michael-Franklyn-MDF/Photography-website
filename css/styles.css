@@ -63,6 +63,12 @@ main {
   margin: 2rem auto;
 }
 
+#gallery p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
 
 .photo-grid {
   display: grid;
