@@ -42,11 +42,13 @@ nav a {
   text-decoration: none;
   margin: 0 1.2rem;
   font-weight: 700;
-  transition: color 0.2s;
+  transition: color 0.2s, background 0.3s, box-shadow 0.3s;
 }
 
 nav a:hover {
   color: #9a8c98;
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 2px 8px rgba(34,34,59,0.10);
 }
 
 nav a.active {
@@ -82,17 +84,17 @@ main {
   max-height: 320px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(34,34,59,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.4s cubic-bezier(.4,2,.3,1), box-shadow 0.4s cubic-bezier(.4,2,.3,1);
   gap: 1.5rem;
   margin-bottom: 2rem;
   aspect-ratio: 4 / 3 ;
   display: grid;
-  
+  object-fit: cover;
 }
 
 .photo-grid img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(34,34,59,0.15);
+  transform: scale(1.08) rotate(-1deg);
+  box-shadow: 0 12px 32px rgba(34,34,59,0.18);
 }
 
 .photo-grid h2 {
@@ -112,8 +114,16 @@ main {
 }
 
 .bio {
-  text-align: center;
+  text-align: left;
   margin-top: 4rem;
+  background: linear-gradient(120deg, #e0eaff 60%, #e0c3fc 100%);
+  box-shadow: 0 4px 24px rgba(34,34,59,0.10);
+  border-radius: 18px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 15000px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1.5px solid #e0c3fc;
 }
 
 .bio h2 {
@@ -128,14 +138,16 @@ main {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  box-shadow: 0 4px 12px rgba(34,34,59,0.1);
+  box-shadow: 0 8px 24px rgba(34,34,59,0.13);
+  border: 3px solid #9a8c98;
 }
 
 .bio p {
   max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-  color: #555;
+  margin: 0 auto 1.2rem auto;
+  line-height: 1.7;
+  color: #444;
+  font-size: 1.13rem;
 }
 
 footer {
